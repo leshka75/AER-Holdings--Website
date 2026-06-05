@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — AER Holdings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-mark">AER</div>
+    <div><div class="logo-text">AER Holdings</div><div class="logo-sub">Portfolio Company</div></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get in touch</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="portfolio.html" onclick="closeMenu()">Portfolio</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="news.html" onclick="closeMenu()">News</a>
+  <a href="contact.html" onclick="closeMenu()">Contact</a>
+  <a href="contact.html" class="nav-cta" onclick="closeMenu()">Get in touch</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-eyebrow">Our Companies</div>
+  <h1>Portfolio</h1>
+  <p>AER Holdings owns and operates three distinct health and wellness companies, each addressing a unique segment of the modern wellness market.</p>
+</div>
+
+<!-- EcoMed -->
+<section id="ecomed">
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px">
+    <div class="pc-logo-wrap ecomed" style="width:64px;height:64px;border-radius:14px;font-size:22px">EC</div>
+    <div>
+      <div class="eyebrow" style="margin-bottom:4px;color:#10B981">Healthcare</div>
+      <h2 class="s-title" style="margin-bottom:0">EcoMed</h2>
+    </div>
+    <span class="pc-badge active" style="margin-left:auto">Active</span>
+  </div>
+  <div class="about-grid">
+    <div class="about-content">
+      <p>EcoMed is a modern primary care and urgent care practice built around the patient, not the insurance company. Founded to eliminate the friction, wait times, and impersonal care that define traditional healthcare, EcoMed delivers physician-led medical services that are accessible, efficient, and genuinely focused on outcomes.</p>
+      <p><strong>EcoMed accepts both insurance and cash-pay patients</strong>, offering same-day and next-day appointments across a broad range of services — from routine checkups to acute care visits.</p>
+      <div class="tag-row">
+        <span class="tag">Primary Care</span>
+        <span class="tag">Urgent Care</span>
+        <span class="tag">Preventive Medicine</span>
+        <span class="tag">Lab &amp; Diagnostics</span>
+        <span class="tag">Chronic Disease Management</span>
+      </div>
+    </div>
+    <div class="values-list">
+      <div class="value-item">
+        <div class="value-num" style="color:#10B981">→</div>
+        <div class="value-body">
+          <div class="value-name">Accessible care</div>
+          <div class="value-desc">Insurance and cash-pay options ensure EcoMed is available to the broadest possible patient population.</div>
+        </div>
+      </div>
+      <div class="value-item">
+        <div class="value-num" style="color:#10B981">→</div>
+        <div class="value-body">
+          <div class="value-name">Same-day availability</div>
+          <div class="value-desc">No weeks-long waits. Patients are seen when they need care, not when the calendar allows.</div>
+        </div>
+      </div>
+      <div class="value-item">
+        <div class="value-num" style="color:#10B981">→</div>
+        <div class="value-body">
+          <div class="value-name">Physician-led</div>
+          <div class="value-desc">Every patient interaction is guided by licensed physicians who prioritize clinical quality over throughput.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BioVella -->
+<section id="biovella">
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px">
+    <div class="pc-logo-wrap biovella" style="width:64px;height:64px;border-radius:14px;font-size:22px">BV</div>
+    <div>
+      <div class="eyebrow" style="margin-bottom:4px;color:#F59E0B">Wellness &amp; Aesthetics</div>
+      <h2 class="s-title" style="margin-bottom:0">BioVella</h2>
+    </div>
+    <span class="pc-badge active" style="margin-left:auto">Active</span>
+  </div>
+  <div class="about-grid">
+    <div class="about-content">
+      <p>BioVella is a premium, physician-led wellness practice offering a curated menu of cash-pay services designed for patients who want more from their health. Rather than one-size-fits-all medicine, BioVella delivers personalized, proactive wellness — without insurance constraints.</p>
+      <p><strong>BioVella's model is cash-pay only</strong>, enabling faster appointments, deeper physician relationships, and a clinical environment built entirely around the patient experience.</p>
+      <div class="tag-row">
+        <span class="tag">Hormone Optimization</span>
+        <span class="tag">IV Therapy</span>
+        <span class="tag">Weight Management</span>
+        <span class="tag">Concierge Wellness</span>
+        <span class="tag">Aesthetic Services</span>
+      </div>
+    </div>
+    <div class="values-list">
+      <div class="value-item">
+        <div class="value-num" style="color:#F59E0B">→</div>
+        <div class="value-body">
+          <div class="value-name">Premium experience</div>
+          <div class="value-desc">From the moment a patient walks in, every touchpoint — environment, staff, clinical care — is designed to exceed expectations.</div>
+        </div>
+      </div>
+      <div class="value-item">
+        <div class="value-num" style="color:#F59E0B">→</div>
+        <div class="value-body">
+          <div class="value-name">Personalized protocols</div>
+          <div class="value-desc">No templated care plans. BioVella physicians design individualized treatment pathways based on labs, goals, and lifestyle.</div>
+        </div>
+      </div>
+      <div class="value-item">
+        <div class="value-num" style="color:#F59E0B">→</div>
+        <div class="value-body">
+          <div class="value-name">Cash-pay freedom</div>
+          <div class="value-desc">Operating outside insurance allows BioVella to offer services and depth of care that traditional practices cannot.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RF Living -->
+<section id="rfliving" style="border-bottom:none">
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px">
+    <div class="pc-logo-wrap rf" style="width:64px;height:64px;border-radius:14px;font-size:22px">RF</div>
+    <div>
+      <div class="eyebrow" style="margin-bottom:4px;color:#8B5CF6">Lifestyle &amp; Recovery</div>
+      <h2 class="s-title" style="margin-bottom:0">RF Living</h2>
+    </div>
+    <span class="pc-badge active" style="margin-left:auto">Active</span>
+  </div>
+  <div class="about-grid">
+    <div class="about-content">
+      <p>RF Living is a performance and recovery lifestyle brand built for people who treat their health as a priority — not an afterthought. Rooted in science-backed recovery protocols and delivered through an elevated member experience, RF Living bridges the gap between medical-grade recovery and everyday wellness.</p>
+      <p><strong>RF Living operates on a membership model</strong>, creating ongoing relationships with members who are committed to sustainable performance and long-term health optimization.</p>
+      <div class="tag-row">
+        <span class="tag">Recovery Protocols</span>
+        <span class="tag">Performance Optimization</span>
+        <span class="tag">Membership Community</span>
+        <span class="tag">Lifestyle Coaching</span>
+        <span class="tag">Biometrics &amp; Tracking</span>
+      </div>
+    </div>
+    <div class="values-list">
+      <div class="value-item">
+        <div class="value-num" style="color:#8B5CF6">→</div>
+        <div class="value-body">
+          <div class="value-name">Science-backed methods</div>
+          <div class="value-desc">Every protocol at RF Living is grounded in peer-reviewed research and refined through real-world member outcomes.</div>
+        </div>
+      </div>
+      <div class="value-item">
+        <div class="value-num" style="color:#8B5CF6">→</div>
+        <div class="value-body">
+          <div class="value-name">Elevated environment</div>
+          <div class="value-desc">Recovery and wellness deserve spaces that inspire — RF Living locations are designed to motivate and energize.</div>
+        </div>
+      </div>
+      <div class="value-item">
+        <div class="value-num" style="color:#8B5CF6">→</div>
+        <div class="value-body">
+          <div class="value-name">Community-driven</div>
+          <div class="value-desc">Members aren't customers. RF Living builds a community of like-minded individuals committed to optimal living.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo logo">
+        <div class="logo-mark">AER</div>
+        <div><div class="logo-text">AER Holdings</div></div>
+      </a>
+      <p class="footer-tagline">Building and operating modern health and wellness companies across the United States.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Portfolio</div>
+      <ul class="footer-links">
+        <li><a href="#ecomed">EcoMed</a></li>
+        <li><a href="#biovella">BioVella</a></li>
+        <li><a href="#rfliving">RF Living</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="mailto:info@aerholdings.com">info@aerholdings.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 AER Holdings. All rights reserved.</span>
+    <span>Health &amp; Wellness Holdings</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

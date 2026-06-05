@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News — AER Holdings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-mark">AER</div>
+    <div><div class="logo-text">AER Holdings</div><div class="logo-sub">Portfolio Company</div></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="news.html" class="active">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get in touch</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="portfolio.html" onclick="closeMenu()">Portfolio</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="news.html" onclick="closeMenu()">News</a>
+  <a href="contact.html" onclick="closeMenu()">Contact</a>
+  <a href="contact.html" class="nav-cta" onclick="closeMenu()">Get in touch</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-eyebrow">Press &amp; Updates</div>
+  <h1>News</h1>
+  <p>Announcements, milestones, and updates from AER Holdings and our portfolio companies.</p>
+</div>
+
+<section style="border-bottom:none">
+  <div class="news-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+
+    <div class="news-card">
+      <div class="news-date">June 2026</div>
+      <div class="news-tag">Portfolio · BioVella</div>
+      <div class="news-title">BioVella expands concierge wellness offerings with new membership tier</div>
+      <div class="news-excerpt">BioVella has launched an expanded concierge membership program offering dedicated physician access, quarterly labs, and fully personalized wellness planning for a growing base of premium members.</div>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">May 2026</div>
+      <div class="news-tag">Company · AER Holdings</div>
+      <div class="news-title">AER Holdings welcomes RF Living to the portfolio</div>
+      <div class="news-excerpt">AER Holdings has completed its acquisition of RF Living, a performance and recovery lifestyle brand. The acquisition expands AER's reach into the growing performance wellness segment.</div>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">March 2026</div>
+      <div class="news-tag">Portfolio · EcoMed</div>
+      <div class="news-title">EcoMed opens new clinic location, expanding regional access</div>
+      <div class="news-excerpt">EcoMed has opened its newest primary care clinic location, extending same-day access to physician-led care for thousands of additional patients in the region.</div>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">January 2026</div>
+      <div class="news-tag">Portfolio · BioVella</div>
+      <div class="news-title">BioVella launches GLP-1 weight management program</div>
+      <div class="news-excerpt">BioVella has introduced a medically supervised GLP-1 weight management program, combining physician oversight, lab monitoring, and lifestyle coaching into one comprehensive offering.</div>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">November 2025</div>
+      <div class="news-tag">Portfolio · EcoMed</div>
+      <div class="news-title">EcoMed achieves same-day appointment guarantee across all locations</div>
+      <div class="news-excerpt">EcoMed has rolled out a same-day appointment guarantee across all clinic locations, cementing its position as the region's most accessible primary and urgent care provider.</div>
+    </div>
+
+    <div class="news-card">
+      <div class="news-date">September 2025</div>
+      <div class="news-tag">Company · AER Holdings</div>
+      <div class="news-title">AER Holdings announces new strategic priorities for 2026</div>
+      <div class="news-excerpt">AER Holdings has outlined its strategic priorities for the coming year, including geographic expansion for EcoMed, new service lines at BioVella, and the integration of RF Living into the portfolio.</div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:56px;padding-top:40px;border-top:1px solid var(--bd)">
+    <div class="eyebrow">Media Inquiries</div>
+    <h2 class="s-title" style="font-size:clamp(24px,3vw,36px);margin-bottom:12px">Press contact</h2>
+    <p style="font-size:15px;color:var(--mu);margin-bottom:24px;line-height:1.7">For press inquiries, interview requests, or media assets, please reach out to our communications team.</p>
+    <a href="mailto:press@aerholdings.com" class="btn-ghost">press@aerholdings.com</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo logo">
+        <div class="logo-mark">AER</div>
+        <div><div class="logo-text">AER Holdings</div></div>
+      </a>
+      <p class="footer-tagline">Building and operating modern health and wellness companies across the United States.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Portfolio</div>
+      <ul class="footer-links">
+        <li><a href="portfolio.html#ecomed">EcoMed</a></li>
+        <li><a href="portfolio.html#biovella">BioVella</a></li>
+        <li><a href="portfolio.html#rfliving">RF Living</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="mailto:info@aerholdings.com">info@aerholdings.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 AER Holdings. All rights reserved.</span>
+    <span>Health &amp; Wellness Holdings</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

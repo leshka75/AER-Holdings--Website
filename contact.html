@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — AER Holdings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-mark">AER</div>
+    <div><div class="logo-text">AER Holdings</div><div class="logo-sub">Portfolio Company</div></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get in touch</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="portfolio.html" onclick="closeMenu()">Portfolio</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="news.html" onclick="closeMenu()">News</a>
+  <a href="contact.html" onclick="closeMenu()">Contact</a>
+  <a href="contact.html" class="nav-cta" onclick="closeMenu()">Get in touch</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-eyebrow">Reach Out</div>
+  <h1>Contact AER Holdings</h1>
+  <p>Whether you're a prospective partner, operator, investor, or just curious — we'd love to hear from you.</p>
+</div>
+
+<section style="border-bottom:none">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="eyebrow">Contact information</div>
+      <h2 class="s-title" style="font-size:clamp(26px,3.5vw,40px);margin-bottom:8px">Let's talk</h2>
+      <p style="font-size:15px;color:var(--mu);line-height:1.7;margin-bottom:32px">Reach out directly or use the form. We respond to all serious inquiries within one business day.</p>
+
+      <div class="ci-card">
+        <div class="ci-icon">✉</div>
+        <div>
+          <div class="ci-label">General inquiries</div>
+          <div class="ci-val"><a href="mailto:info@aerholdings.com" style="color:inherit;text-decoration:none">info@aerholdings.com</a></div>
+        </div>
+      </div>
+      <div class="ci-card">
+        <div class="ci-icon">📰</div>
+        <div>
+          <div class="ci-label">Press &amp; media</div>
+          <div class="ci-val"><a href="mailto:press@aerholdings.com" style="color:inherit;text-decoration:none">press@aerholdings.com</a></div>
+        </div>
+      </div>
+      <div class="ci-card">
+        <div class="ci-icon">🤝</div>
+        <div>
+          <div class="ci-label">Partnerships &amp; acquisitions</div>
+          <div class="ci-val"><a href="mailto:partnerships@aerholdings.com" style="color:inherit;text-decoration:none">partnerships@aerholdings.com</a></div>
+        </div>
+      </div>
+
+      <div style="margin-top:32px;padding-top:28px;border-top:1px solid var(--bd)">
+        <div class="eyebrow" style="margin-bottom:16px">Portfolio companies</div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div class="pc-logo-wrap ecomed" style="width:36px;height:36px;border-radius:8px;font-size:12px">EC</div>
+            <div>
+              <div style="font-size:14px;font-weight:600;letter-spacing:-.01em">EcoMed</div>
+              <div style="font-size:12px;color:var(--mu)">Primary &amp; urgent care inquiries</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <div class="pc-logo-wrap biovella" style="width:36px;height:36px;border-radius:8px;font-size:12px">BV</div>
+            <div>
+              <div style="font-size:14px;font-weight:600;letter-spacing:-.01em">BioVella</div>
+              <div style="font-size:12px;color:var(--mu)">Wellness &amp; aesthetics inquiries</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <div class="pc-logo-wrap rf" style="width:36px;height:36px;border-radius:8px;font-size:12px">RF</div>
+            <div>
+              <div style="font-size:14px;font-weight:600;letter-spacing:-.01em">RF Living</div>
+              <div style="font-size:12px;color:var(--mu)">Membership &amp; recovery inquiries</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="form-title">Send us a message</div>
+      <div class="form-sub">Tell us who you are and how we can help. All fields marked * are required.</div>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-row">
+          <div class="field">
+            <label for="fname">First name *</label>
+            <input type="text" id="fname" name="first_name" placeholder="Alex" required>
+          </div>
+          <div class="field">
+            <label for="lname">Last name *</label>
+            <input type="text" id="lname" name="last_name" placeholder="Smith" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="alex@company.com" required>
+        </div>
+        <div class="field">
+          <label for="company">Company / Organization</label>
+          <input type="text" id="company" name="company" placeholder="Your company name">
+        </div>
+        <div class="field">
+          <label for="reason">Reason for contact *</label>
+          <select id="reason" name="reason" required>
+            <option value="" disabled selected>Select a reason</option>
+            <option value="partnership">Partnership or acquisition</option>
+            <option value="investment">Investment inquiry</option>
+            <option value="employment">Employment / careers</option>
+            <option value="press">Press or media</option>
+            <option value="portfolio">Portfolio company inquiry</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" placeholder="Tell us more about your inquiry…" required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send message</button>
+        <div class="form-note">We respond to all inquiries within one business day.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo logo">
+        <div class="logo-mark">AER</div>
+        <div><div class="logo-text">AER Holdings</div></div>
+      </a>
+      <p class="footer-tagline">Building and operating modern health and wellness companies across the United States.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Portfolio</div>
+      <ul class="footer-links">
+        <li><a href="portfolio.html#ecomed">EcoMed</a></li>
+        <li><a href="portfolio.html#biovella">BioVella</a></li>
+        <li><a href="portfolio.html#rfliving">RF Living</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="mailto:info@aerholdings.com">info@aerholdings.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 AER Holdings. All rights reserved.</span>
+    <span>Health &amp; Wellness Holdings</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
