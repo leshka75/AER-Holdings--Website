@@ -148,8 +148,10 @@ footer{padding:56px 5vw 40px;background:var(--bg)}
 .footer-bottom{display:flex;align-items:center;justify-content:space-between;font-size:13px;color:var(--mu2)}
 
 /* PAGE HERO (inner pages) */
-.page-hero{padding:80px 5vw 64px;border-bottom:1px solid var(--bd);position:relative;overflow:hidden}
-.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 80% at 0% 50%,rgba(37,99,235,0.05) 0%,transparent 70%);pointer-events:none}
+.page-hero{padding:100px 5vw 80px;border-bottom:1px solid var(--bd);position:relative;overflow:hidden;background-size:cover;background-position:center}
+.page-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(20,20,32,0.88) 0%,rgba(20,20,32,0.65) 60%,rgba(20,20,32,0.45) 100%);pointer-events:none}
+.page-hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 80% at 0% 50%,rgba(37,99,235,0.10) 0%,transparent 65%);pointer-events:none}
+.page-hero>*{position:relative;z-index:1}
 .page-hero-eyebrow{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--accent-light);margin-bottom:14px}
 .page-hero h1{font-size:clamp(36px,5.5vw,64px);font-weight:700;letter-spacing:-.04em;line-height:1.05;max-width:700px;margin-bottom:18px}
 .page-hero p{font-size:17px;font-weight:400;color:var(--mu);max-width:520px;line-height:1.7;letter-spacing:-.01em}
