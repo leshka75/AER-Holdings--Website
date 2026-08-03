@@ -84,6 +84,25 @@ section{padding:96px 5vw;border-bottom:1px solid var(--bd)}
 .pc-fact-dot.biovella{background:#F59E0B}
 .pc-fact-dot.rf{background:#8B5CF6}
 
+/* PROPERTY SHOWCASE */
+.property-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.property-card{background:var(--bg2);border:1px solid var(--bd);border-radius:16px;overflow:hidden;transition:border-color .25s,transform .25s}
+.property-card:hover{border-color:rgba(139,92,246,.4);transform:translateY(-3px)}
+.property-img{position:relative;height:190px;overflow:hidden}
+.property-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.property-card:hover .property-img img{transform:scale(1.05)}
+.property-loc{position:absolute;top:12px;left:12px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;padding:5px 11px;border-radius:100px;background:rgba(20,20,32,.82);backdrop-filter:blur(8px);color:#fff;border:1px solid rgba(255,255,255,.14)}
+.property-body{padding:22px}
+.property-name{font-size:18px;font-weight:600;letter-spacing:-.025em;margin-bottom:12px}
+.property-specs{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--mu);margin-bottom:16px}
+.property-feat{font-size:13px;color:var(--mu);line-height:1.6;padding-top:16px;border-top:1px solid var(--bd)}
+.property-rate{margin-top:16px;display:flex;align-items:baseline;gap:5px}
+.property-rate-val{font-size:20px;font-weight:700;letter-spacing:-.03em;color:#8B5CF6}
+.property-rate-unit{font-size:12px;color:var(--mu2)}
+.section-sub-head{font-size:20px;font-weight:600;letter-spacing:-.025em;margin-bottom:6px}
+.section-sub-note{font-size:14px;color:var(--mu);margin-bottom:28px;line-height:1.6}
+.stack-top{margin-top:56px;padding-top:44px;border-top:1px solid var(--bd)}
+
 /* ABOUT / MISSION */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
 .about-content p{font-size:16px;font-weight:400;color:var(--mu);line-height:1.8;margin-bottom:18px;letter-spacing:-.01em}
